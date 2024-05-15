@@ -20,6 +20,10 @@
     border: 5px solid purple;
 }
 
+#hugPhoto {
+    width: 300px;
+}
+
 #madness {
     width: 275px;
 }
@@ -73,6 +77,10 @@
         height: 53vw;
         margin-right: 3vw;
         margin-left: 3vw;
+    }
+
+    #hugPhoto {
+        width: 45vw;
     }
 
 }
