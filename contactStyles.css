@@ -1,0 +1,181 @@
+/*contact.html*/
+#formObject {
+    display: flex;
+    justify-content: center;
+}
+#contactFormDiv {
+    margin-top: 0px;
+    border-radius: 5px;
+    padding: 20px;
+    padding-right: 0px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    width: 600px;
+    height: 200px;
+    border: 5px solid #452c63;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.formText {
+    padding: 12px;
+    width: 250px;
+    margin-top: 5px;
+    display: inline-block;
+    border: 2px solid purple;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: cornsilk;
+    font-family: 'Josefin_Sans';
+    font-size: 15px;
+}
+
+#messageBox {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 12px;
+    padding-bottom: 50px;
+    width: 300px;
+    display: inline-block;
+    border: 2px solid purple;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: cornsilk;
+    font-family: 'Josefin_Sans';
+    font-size: 15px;
+    resize: none;
+}
+
+#submitButton {
+    margin-right: 30px;
+    margin-top: 5px;
+    float: right;
+    padding: 5px;
+    background-color: purple;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid purple;
+    font-family: 'Josefin_Sans';
+    font-size: 15px;
+    color: white;
+    
+}
+
+#topDiv {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+#formInstructionDiv {
+    width: 50%;
+}
+
+#formInstruction {
+    font-size: 170%;
+    font-family: 'Josefin_Sans';
+    color: #452c63;
+    text-align: center;
+}
+
+#email {
+    font-family: 'Josefin_Sans';
+    text-decoration: underline;
+    color: purple;
+}
+
+#thankYou {
+    text-align: center;
+    margin-bottom: 7vw;
+    margin-left: -2vw;
+    font-size: 5vw;
+    font-family: 'Caprasimo';
+    color: #452c63;
+}
+/*end contact.html*/
+
+/*variable screen size -- dynamic adjustements*/
+@media screen and (max-width: 949px){
+
+    #contactFormDiv {
+
+        margin-top: 0px;
+        border-radius: 5px;
+        padding: 20px;
+        padding-right: 0px;
+        padding-left: 30px;
+        padding-bottom: 0px;
+        width: 600px;
+        width: 80vw;
+        height: 200px;
+        border: 5px solid #452c63;
+    }
+
+
+    .formText {
+        padding: 12px;
+        width: 250px;
+        width: 30vw;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    #messageBox {
+        margin-left: 20px;
+        margin-top: 5px;
+        padding: 12px;
+        padding-bottom: 50px;
+        width: 300px;
+        width: 40vw;
+        font-size: 15px;
+        resize: none;
+    }
+
+    #submitButton {
+        margin-right: 30px;
+        margin-top: 5px;
+        float: right;
+        padding: 5px;
+        background-color: purple;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 2px solid purple;
+        font-family: 'Josefin_Sans';
+        font-size: 15px;
+        color: white;
+        
+    }
+
+    #topDiv {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    #formInstructionDiv {
+        width: 70%;
+    }
+
+    #formInstruction {
+        font-size: 120%;
+        font-size: 4vw;
+        font-family: 'Josefin_Sans';
+        color: #452c63;
+        text-align: center;
+    }
+
+    #email {
+        font-family: 'Josefin_Sans';
+        text-decoration: underline;
+        color: purple;
+        font-size: 4vw;
+    }
+
+}

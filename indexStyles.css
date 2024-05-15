@@ -1,0 +1,87 @@
+/*index.html*/
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+#mainText {
+    font-size: 400%;
+    font-family: 'Caprasimo';
+    color: #452c63;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#tagline {
+    color: purple;
+    font-family: 'Caprasimo';
+    font-size: 150%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#crayonContainer {
+    width: 50px;
+    height: 50px;
+    zoom: 0.40;
+    float: right;
+    margin-top: -130px;
+    position: relative;
+}
+#crayon {
+    position: absolute;
+    width: 900px;
+    right: -1383px;
+    top: -152px;
+}
+#jarContainer {
+    width: 50px;
+    height: 0px;
+    zoom: 0.5;
+    float: right;
+    position: relative;
+}
+#jar {
+    position: absolute;
+    top: -130px;
+    right: -1005px;
+}
+#crayonPhoto {
+    width: 750px;
+    border: 5px solid purple;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+/*end of index.html*/
+
+
+/*variable screen size -- dynamic adjustements*/
+@media screen and (max-width: 789px){
+    #mainImage {
+        display: flex;
+        justify-content: center;
+    }
+    #crayonPhoto {
+        width: 200px;
+        width:83%;
+        margin-top: 45px;
+
+    }
+    #jar {
+        display: none;
+    }
+    #crayon {
+        display: none;
+    }
+
+    #mainText {
+        font-size: 300%;
+        font-size: 7vw;
+    }
+    #tagline {
+        font-size: 100%;
+        font-size: 3vw;
+    }
+}

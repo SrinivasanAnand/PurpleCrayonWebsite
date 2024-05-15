@@ -1,0 +1,78 @@
+/*about.html*/
+.aboutObject {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.aboutText {
+    display: flex;
+    font-family: 'Josefin_Sans';
+    font-size: 170%;
+    color: purple;
+    
+}
+
+.crayonPhoto {
+    width: 250px;
+    border: 5px solid purple;
+}
+
+#madness {
+    width: 275px;
+}
+
+#firstText {
+    font-size: 210%;
+}
+/*end of about.html*/
+
+/*variable screen size -- dynamic adjustements*/
+@media screen and (max-width: 949px){
+
+    .aboutObject {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    
+    }
+    
+    .headerText {
+        width: 700px;
+        width: 50%;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    
+    }
+    
+    .header {
+
+        font-size: 200%;
+        font-size: 5vw;
+
+    }
+    
+    .aboutText {
+
+        font-size: 120%;
+        font-size: 3vw;
+        
+    }
+
+    #firstText {
+        font-size: 120%;
+        font-size: 4vw;
+    }
+
+    .crayonPhoto {
+        width: 200px;
+        width: 40vw;
+        height: 53vw;
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+
+}

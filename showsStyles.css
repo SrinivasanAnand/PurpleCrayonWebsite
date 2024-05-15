@@ -1,0 +1,34 @@
+/*show.html*/
+.showObject {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.poster {
+    width: 33.33vw;
+    height: 33.33vw;
+}
+/*end show.html*/
+
+/*variable screen size -- dynamic adjustements*/
+@media screen and (max-width: 949px){
+
+    .showObject {
+        display: grid;
+        grid-template-columns: repeat(3, 0fr);
+        grid-auto-rows: minmax(20vw, auto);
+        width: 100vw;
+    }
+    
+    .poster {
+        width: 33.33vw;
+        height: 33.33vw;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        top: -20vw;
+    }
+
+}
