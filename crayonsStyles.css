@@ -1,4 +1,13 @@
 /*crayon.html*/
+#mainText {
+    font-size: 400%;
+    font-family: 'Caprasimo';
+    color: #452c63;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
 .headshot{
     width: 250px;
     height: 333px;
@@ -6,6 +15,22 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
+}
+
+.blue:hover {
+    border: 5px solid #0a1195;
+}
+
+.orange:hover {
+    border: 5px solid #F67833;
+}
+
+.yellow:hover {
+    border: 5px solid #FDDA0D;
+}
+
+.green:hover {
+    border: 5px solid #097969;
 }
 
 .headshot_blank{
@@ -37,6 +62,80 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
+/* Bio popup (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    justify-content: center;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Bio popup content */
+.modal-content {
+    background-color: cornsilk;
+    margin: 3% auto; /* 15% from the top and centered */
+    margin-bottom: 10%;
+    padding: 20px;
+    border: 5px solid gray;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Maximum width */
+}
+
+#modalImageAndBio {
+    display: flex;
+    flex-direction: row;
+}
+
+#modalImage {
+    width: 3vw;
+    height: 45vh;
+    border: 5px solid #452c63;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#modalBio {
+    margin-left: 2vw;
+    margin-top: 1vw;
+    font-family: 'Josefino_Sans';
+    color: purple;
+    font-size: 130%;
+    font-weight: 600;
+}
+
+#modalName {
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 0px;
+    font-family: 'Josefino_Sans';
+    color: #452c63;
+    font-size: 180%;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /*end crayon.html*/
 
 /*variable screen size -- dynamic adjustements*/
@@ -56,10 +155,42 @@
     }
 
     .name{
-        margin-left: 20px;
-        margin-left: 2vw;
+        margin-left: 3vw;
         margin-right: 20px;
         margin-right: 2vw;
         font-size: 2vw;
+    }
+
+    .modal-content {
+        margin: 10vw; /* 15% from the top and centered */
+        margin-bottom: 20vh;
+        padding: 20px;
+    }
+
+    #modalName {
+        margin-left: 0vw;
+        font-family: 'Josefino_Sans';
+        color: #452c63;
+        font-size: 5vw;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #modalImage {
+        width: 10vw;
+        height: 20vh;
+        border: 5px solid #452c63;
+        margin-left: 0px;
+        margin-right: 1vw;
+        margin-top: 0px;
+    }
+    
+    #modalBio {
+        margin-left: 7vw;
+        margin-top: 2vw;
+        font-family: 'Josefino_Sans';
+        color: purple;
+        font-size: 3vw;
+        font-weight: 600;
     }
 }
