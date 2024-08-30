@@ -11,15 +11,39 @@
 <body>
 
     <!-- Nav Bar -->
-    <div class="subHeading">
-        <a id="firstSub" href = "index.html">Home</a>
-        <a id="sub" href = "about.html">About</a>
-        <a id="sub" href = "crayons.html">Crayons</a>
-        <a id="sub" href = "join.html">Join</a>
-        <a id="currentSub" href = "shows.html">Shows</a>
-        <a id="sub" href = "contact.html">Contact Us</a>
-    
-    </div>
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html">About</a>
+                <!--
+                <ul class="dropdown">
+                    <li><a href="tour.html">Tour</a></li>
+                </ul>
+                -->
+            </li>
+            <li class="nav-item">
+                <a href="crayons.html">Crayons</a>
+            </li>
+            <li class="nav-item">
+                <a href="join.html">Join</a>
+            </li>
+            <li class="nav-item">
+                <a id="current" href="shows.html">Shows</a>
+                <ul class="dropdown">
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li id="spacer" class="nav-item">
+                <a href=""></a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Shows Page -->
     <div class="showObject">

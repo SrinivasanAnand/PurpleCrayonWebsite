@@ -1,0 +1,44 @@
+/* Collage Page Styles */
+
+/* Container for the collage */
+#collageContainer {
+    margin-top: 5vh;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Allows absolute positioning within it */
+    height: 80vh; /* Adjust as needed to fit your images */
+    width: 100%;
+    overflow: hidden; /* Prevent images from spilling out of the container */
+}
+
+/* Title Styling */
+#collageTitle {
+    font-family: 'Josefin_Sans';
+    font-size: 3vw;
+    color: #452c63; /* Same color as the contact page */
+    margin-bottom: 20px;
+}
+
+/* Scattered collage styling */
+#collageScattered {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Individual collage items */
+.collageItem {
+    position: absolute; /* Allows positioning anywhere within the container */
+    border: 5px solid purple;
+    border-radius: 5px;
+    object-fit: cover; 
+    overflow: hidden;
+}
+
+/* Randomly position the images */
+.collageItem:nth-child(1) { top: 10%; left: 15%; width: 400px}
+.collageItem:nth-child(2) { top: 40%; left: 30%;}
+.collageItem:nth-child(3) { top: 20%; left: 50%; }
+/* Add more nth-child styles for additional images */
+
+

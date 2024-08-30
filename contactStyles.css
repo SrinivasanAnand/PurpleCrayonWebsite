@@ -74,7 +74,7 @@
 }
 
 #formInstructionDiv {
-    width: 50%;
+    width: 75%;
 }
 
 #formInstruction {
@@ -98,10 +98,45 @@
     font-family: 'Caprasimo';
     color: #452c63;
 }
+
+/* Alternatively, if the embed is inside a container */
+.embed-container {
+    width: 360px;
+    height: 550px;
+    max-width: 400px; /* Adjust max-width to fit better */
+    border-radius: 4px;
+    margin: 0 auto; /* Center the Instagram post */
+    border: 5px solid purple;
+}
+
+/* Ensure the Instagram iframe scales correctly */
+.embed-container iframe {
+    width: 100% !important; /* Force the iframe to expand to the container width */
+    height: 100% !important;
+}
+
+#formContainer {
+    margin-top: -20vh;
+}
+
+
+#organizerDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment */
+    margin: 0 auto; /* Center the whole div horizontally */
+    max-width: 1200px; /* Adjust the max-width if needed */
+    padding: 0 20px; /* Add some padding to prevent content from touching the edges */
+}
+
+#instragramTextDiv {
+    margin-right: 100px;
+}
 /*end contact.html*/
 
 /*variable screen size -- dynamic adjustements*/
-@media screen and (max-width: 949px){
+@media screen and (max-width: 1150px){
 
     #contactFormDiv {
 
@@ -159,6 +194,10 @@
         margin-bottom: 0px;
     }
 
+    #formContainer {
+        margin-top: 0vh;
+    }
+
     #formInstructionDiv {
         width: 70%;
     }
@@ -176,6 +215,18 @@
         text-decoration: underline;
         color: purple;
         font-size: 4vw;
+    }
+
+    #organizerDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Center items vertically and horizontally */
+        padding: 0 10px; /* Add some padding for small screens */
+    }
+
+    .embed-container {
+        margin: 20px auto; /* Center and add some space on top/bottom */
     }
 
 }

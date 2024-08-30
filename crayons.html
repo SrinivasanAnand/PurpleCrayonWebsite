@@ -11,15 +11,39 @@
 <body>
 
     <!-- Nav Bar -->
-    <div class="subHeading">
-        <a id="firstSub" href = "index.html">Home</a>
-        <a id="sub" href = "about.html">About</a>
-        <a id="currentSub" href = "crayons.html">Crayons</a>
-        <a id="sub" href = "join.html">Join</a>
-        <a id="sub" href = "shows.html">Shows</a>
-        <a id="sub" href = "contact.html">Contact Us</a>
-    
-    </div>
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html">About</a>
+                <!--
+                <ul class="dropdown">
+                    <li><a href="tour.html">Tour</a></li>
+                </ul>
+                -->
+            </li>
+            <li class="nav-item">
+                <a id="current" href="crayons.html">Crayons</a>
+            </li>
+            <li class="nav-item">
+                <a href="join.html">Join</a>
+            </li>
+            <li class="nav-item">
+                <a href="shows.html">Shows</a>
+                <ul class="dropdown">
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li id="spacer" class="nav-item">
+                <a href=""></a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Crayons Page -->
 
@@ -63,7 +87,7 @@
 
     <div class="row">
         <div class="headshotObject" data-name="Eddie Proffitt" data-photo="headshots/eddie.jpeg" data-color="yellow" data-bio="Eddie is a junior studying Global Affairs.
-        He's one treasurer! Eddie is a yellow crayon.">
+        He's our treasurer! Eddie is a yellow crayon.">
             <img src="headshots/eddie.jpeg" alt="Prentiss" class="headshot yellow">
             <p class="name">Eddie Proffitt ('26)</p>
         </div>

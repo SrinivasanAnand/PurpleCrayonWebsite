@@ -1,0 +1,40 @@
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+
+.videoRow {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.video {
+    background: cornsilk;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border: 5px solid black;
+}
+
+.video iframe {
+    width: 100%; /* Ensures iframe takes full width of the container */
+    height: 200px; /* Fixed height, adjust as needed */
+}
+
+.video p {
+    font-family: 'arial';
+    font-weight: 700;
+    color: #452c63;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .video iframe {
+        height: 150px;
+    }
+}
